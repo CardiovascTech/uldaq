@@ -4,7 +4,11 @@
  *     Author: Measurement Computing Corporation
  */
 
+#ifdef __APPLE__
+#include <libusb.h>
+#else
 #include <libusb-1.0/libusb.h>
+#endif
 #include "./ul_internal.h"
 #include "./DaqDeviceManager.h"
 #include "./DaqDevice.h"

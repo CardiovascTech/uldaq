@@ -53,6 +53,9 @@ case $host in
 	AC_SUBST(OS_DARWIN)
 	backend="mac"
 	os="darwin"
+   CPPFLAGS="-I/opt/homebrew/include/libusb-1.0 $CPPFLAGS"
+  CFLAGS="$CFLAGS -I/opt/homebrew/include"
+  LDFLAGS="$LDFLAGS -L/opt/homebrew/lib"
 	LIBS="${LIBS} -framework IOKit -framework CoreFoundation"
 	;;
 *)

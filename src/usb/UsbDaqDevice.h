@@ -7,7 +7,11 @@
 #ifndef USBDAQDEVICE_H_
 #define USBDAQDEVICE_H_
 
+#ifdef __APPLE__
+#include <libusb.h>
+#else
 #include <libusb-1.0/libusb.h>
+#endif
 #include <vector>
 #include <map>
 
