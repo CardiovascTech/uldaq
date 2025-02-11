@@ -40,7 +40,7 @@ Building the **uldaq** package requires C/C++ compilers, make tool, and the deve
   
   ```
      $ xcode-select --install
-     $ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+     $ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" # if homebrew isn't already installed
      $ brew install libusb
   ```
 
